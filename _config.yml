@@ -51,5 +51,30 @@ plugins:
 #   - vendor/gems/
 #   - vendor/ruby/
 
+# Site Theme settings
 # For copy button on code
 enable_copy_code_button: true
+
+#logo: "/assets/images/logo.png"
+
+color_scheme: dark
+
+collections:
+  kubernetes:
+    permalink: "/:collection/:path/"
+    output: true
+  linux:
+    permalink: "/:collection/:path/"
+    output: true
+just_the_docs:
+  collections:
+    kubernetes:
+      name: Kubernetes
+      nav_fold: true
+      nav_exclude: false
+      search_exclude: false
+    linux:
+      name: Linux
+      nav_fold: true
+      nav_exclude: false
+      search_exclude: false
